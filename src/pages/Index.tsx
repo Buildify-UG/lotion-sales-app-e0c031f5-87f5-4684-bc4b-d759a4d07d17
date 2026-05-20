@@ -116,7 +116,7 @@ const Index = () => {
       {/* Header */}
       <header className="sticky top-0 z-40 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-3xl font-bold">✨ Lotion Shop</h1>
+          <h1 className="text-3xl font-bold">MM PRODUCTS</h1>
           <div className="flex items-center gap-4">
             <Button
               variant="ghost"
