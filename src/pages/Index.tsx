@@ -21,51 +21,51 @@ interface CartItem extends Product {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'Lavender Moisturizer',
-    price: 24.99,
-    image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400&fit=crop',
-    description: 'Soothing lavender lotion for daily hydration',
-    scent: 'Lavender'
+    name: 'Strawberry Jelly',
+    price: 12.99,
+    image: 'https://images.unsplash.com/photo-1585518419759-eb7fbf0b65b2?w=400&h=400&fit=crop',
+    description: 'Sweet strawberry flavored jelly, perfect for desserts',
+    scent: 'Strawberry'
   },
   {
     id: 2,
-    name: 'Rose Petal Cream',
-    price: 28.99,
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop',
-    description: 'Luxurious rose-infused body lotion',
-    scent: 'Rose'
+    name: 'Grape Jelly',
+    price: 12.99,
+    image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd64a4c?w=400&h=400&fit=crop',
+    description: 'Classic grape jelly with rich fruity flavor',
+    scent: 'Grape'
   },
   {
     id: 3,
-    name: 'Citrus Burst Lotion',
-    price: 22.99,
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop',
-    description: 'Energizing citrus blend for refreshed skin',
-    scent: 'Citrus'
+    name: 'Mango Jelly',
+    price: 14.99,
+    image: 'https://images.unsplash.com/photo-1585518419759-eb7fbf0b65b2?w=400&h=400&fit=crop',
+    description: 'Tropical mango jelly, smooth and refreshing',
+    scent: 'Mango'
   },
   {
     id: 4,
-    name: 'Coconut Paradise',
-    price: 26.99,
-    image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400&fit=crop',
-    description: 'Tropical coconut body lotion with SPF',
-    scent: 'Coconut'
+    name: 'Blueberry Jelly',
+    price: 13.99,
+    image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd64a4c?w=400&h=400&fit=crop',
+    description: 'Antioxidant-rich blueberry jelly',
+    scent: 'Blueberry'
   },
   {
     id: 5,
-    name: 'Vanilla Dream',
-    price: 25.99,
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop',
-    description: 'Warm vanilla lotion for sensitive skin',
-    scent: 'Vanilla'
+    name: 'Orange Jelly',
+    price: 12.99,
+    image: 'https://images.unsplash.com/photo-1585518419759-eb7fbf0b65b2?w=400&h=400&fit=crop',
+    description: 'Citrus orange jelly with bright zesty taste',
+    scent: 'Orange'
   },
   {
     id: 6,
-    name: 'Mint Refresh',
-    price: 23.99,
-    image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400&fit=crop',
-    description: 'Cool mint lotion for tired skin',
-    scent: 'Mint'
+    name: 'Mixed Fruit Jelly',
+    price: 15.99,
+    image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd64a4c?w=400&h=400&fit=crop',
+    description: 'Delicious blend of multiple fruit flavors',
+    scent: 'Mixed Fruit'
   }
 ];
 
@@ -143,7 +143,7 @@ const Index = () => {
             <div className="relative">
               <Search className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
               <Input
-                placeholder="Search lotions by name or scent..."
+                placeholder="Search jellies by name or flavor..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10"
@@ -164,7 +164,7 @@ const Index = () => {
 
           {filteredProducts.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-muted-foreground text-lg">No lotions found matching your search.</p>
+              <p className="text-muted-foreground text-lg">No jellies found matching your search.</p>
             </div>
           )}
         </main>
